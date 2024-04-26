@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form For Travelers</title>
+    <style>
+        h1{
+            text-align: center;
+            color: #0501f7;
+            font-size: 40px;
+            font-style: italic;
+            background-color: aliceblue;
+        }
+        form{
+            margin: 0 auto;
+            width: 50%;
+            background-color: rgb(221, 196, 149);
+            border: brown;
+        }
+    </style>
+</head>
+<body background="travel2.png">
+	<h1>{Travelers Survey Form}</h1>
+	<form id="survey-form">
+		<label for="name">Name:</label><br>
+		<input type="text" id="name" name="name" placeholder="Ex.amoghpattar"><br>
+		<label for="email">Email:</label><br>
+		<input type="email" id="email" name="email" placeholder="@gmail.com"><br>
+		<label for="age">Age:</label><br>
+		<input type="number" id="age" name="age" min="18" max="100" placeholder="18-100"><br>
+		<label for="multiple-choice">favourite mode of transport:</label><br>
+		<select id="multiple-choice" name="multiple-choice" >
+			<option value="option1">bike</option>
+			<option value="option2">car</option>
+			<option value="option3">train</option>
+		</select><br>
+		<label for="checkboxes">How Do You Like To Travel:</label>
+        <br>
+		<input type="checkbox" id="checkbox1" name="checkbox1" value="option1">
+		<label for="checkbox1">Solo</label>
+        <br>
+		<input type="checkbox" id="checkbox2" name="checkbox2" value="option2">
+		<label for="checkbox2">with Friends</label>
+        <br>
+		<input type="checkbox" id="checkbox3" name="checkbox3" value="option3">
+		<label for="checkbox3">With Family</label>
+        <br>
+		<label for="text-input">Dream Destination:</label>
+        <br>
+		<input type="text" id="text-input" name="text-input" placeholder="ex.coorg">
+        <br>
+		<label for="textarea">What do you like about this place:</label>
+        <br>
+		<textarea id="textarea" name="textarea" rows="6" cols="50" ></textarea>
+        <br>
+		<label for="rating">Rate Your Expirence:</label><br>
+		<input type="range" id="rating" name="rating" min="1" max="5">
+        <br>
+		<label for="dropdown">Dropdown your survey Expirence:</label>
+        <br>
+		<select id="dropdown" name="dropdown your survey Expirence" >
+			<option value="option1">bad</option>
+			<option value="option2">ok</option>
+			<option value="option3">good</option>
+		</select><br>
+		<label for="radio-buttons">Would you recommend this survey to your Friends:</label><br>
+		<input type="radio" id="radio1" name="radio-buttons" value="YES" >
+		<label for="radio1">YES</label><br>
+		<input type="radio" id="radio2" name="radio-buttons" value="NOT SURE">
+		<label for="radio2">NOT SURE</label><br>
+		<input type="radio" id="radio3" name="radio-buttons" value="NO">
+		<label for="radio3">NO</label><br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
